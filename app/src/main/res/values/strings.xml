@@ -1,6 +1,50 @@
 <resources>
+    //Strings das Telas
     <string name="app_name">Finance</string>
+    <string name="title_activity_creditos">Créditos</string>
+    <string name="title_activity_debitos">Débitos</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_registro">Registro</string>
 
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+    //Strings da Tela de Cadastro
+    <string name="nome">Nome</string>
+    <string name="senha">Senha</string>
+    <string name="email">Email</string>
+    <string name="criar">Criar</string>
+    <string name="limpar">Limpar</string>
+
+    //Strings da Tela de Login
+    <string name="ou">ou</string>
+    <string name="entrar">Entrar</string>
+    <string name="registro">Criar conta</string>
+
+    //Strings da Tela Home
+    <string name="nome_app">Minhas Finanças</string>
+    <string name="credito_home">Créditos</string>
+    <string name="debito_home">Débitos</string>
+    <string name="saldo_home">Saldo</string>
+    <string name="moeda">R$</string>
+
+    //Strings geral
+    <string name="erro">Erro</string>
+    <string name="ok">Ok</string>
+    <string name="entrada">Bem Vindo!</string>
+    <string name="create_sucess">Sucesso ao criar conta! :D</string>
+    <string name="create_fail">Erro ao criar conta! :(</string>
+    <string name="settings">Configuração</string>
+    <string name="logout">Sair</string>
+
+
+    //String do Banner
+    <string name="banner_home">ca-app-pub-7020619916977209/3197280971</string>
+    <string name="DEVICE_ID_TEST">D9XXXXXXXXXXXXXXXXXXXXXXXXXXXXX</string>
+
+    //String Google
+    <string name="loading">Loading…</string>
+    <string name="signed_in_fmt">Bem vindo: %s</string>
+    <string name="signed_in_err">"Error: por favor tente novamente ou crie uma nova conta."</string>
+
+    //String TESTE HOME
+    <string name="valorHome">12.000,00</string>
+    <string name="resultadoHome">0,00</string>
 </resources>
