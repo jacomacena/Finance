@@ -2,12 +2,23 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.jcdev.finance">
 
+    //Permissões
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        //Meta data
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        //Splash Screen
         <activity
             android:name=".SplashScreen"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -19,16 +30,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        //Tela Home
         <activity android:name=".Home" />
+
+        //Tela Credito
         <activity
             android:name=".Credito.Credito"
             android:label="@string/title_activity_credito"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        //Tela Debito
         <activity
             android:name=".Debito.Debito"
             android:label="@string/title_activity_debito"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".Authentication.Register"/>
+
+        //Tela de Registro
+        <activity android:name=".Authentication.Register" />
+
+        //Tela de Login
+        <activity android:name=".Authentication.Login"/>
     </application>
 
 </manifest>
