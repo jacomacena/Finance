@@ -244,44 +244,5 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
 
     /* ********************************** Login Facebook ********************************** */
 
-    /* ********************************** Opções de Menu ********************************** */
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.menu_home, menu);
-        return true;
-    }
-
-    //implementar o logout
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        int id = item.getItemId();
-        switch (id){
-            case R.id.menuLogout:
-                Intent disconecta = new Intent(this, Login.class);
-                startActivity(disconecta);
-                break;
-
-            case R.id.menuDesconecta:
-                /* *********************** Logout Google ********************** */
-                Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(
-                        new ResultCallback<Status>() {
-                            @Override
-                            public void onResult(@NonNull Status status) {
-                                // [START_EXCLUDE]
-                                updateUI(false);
-                                // [END_EXCLUDE]
-                            }
-                        });
-                /* *********************** Logout Google ********************** */
-
-                Intent logout = new Intent(this, Login.class);
-                startActivity(logout);
-                break;
-
-
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-    /* ********************************** Opções de Menu ********************************** */
+    
 }
