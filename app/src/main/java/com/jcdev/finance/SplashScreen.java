@@ -3,6 +3,7 @@ package com.jcdev.finance;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import com.jcdev.finance.Authentication.Login;
 
 public class SplashScreen extends AppCompatActivity {
     @Override
@@ -19,7 +20,7 @@ public class SplashScreen extends AppCompatActivity {
                     e.printStackTrace();
                 }
 
-                Intent intent = new Intent(getApplicationContext(), Home.class);
+                Intent intent = new Intent(getApplicationContext(), Login.class);
                 startActivity(intent);
             }
 
