@@ -257,7 +257,11 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
         int id = item.getItemId();
         switch (id){
             case R.id.menuLogout:
+                Intent disconecta = new Intent(this, Login.class);
+                startActivity(disconecta);
+                break;
 
+            case R.id.menuDesconecta:
                 /* *********************** Logout Google ********************** */
                 Auth.GoogleSignInApi.signOut(mGoogleApiClient).setResultCallback(
                         new ResultCallback<Status>() {
@@ -273,6 +277,7 @@ public class Login extends AppCompatActivity implements GoogleApiClient.OnConnec
                 Intent logout = new Intent(this, Login.class);
                 startActivity(logout);
                 break;
+
 
         }
         return super.onOptionsItemSelected(item);
