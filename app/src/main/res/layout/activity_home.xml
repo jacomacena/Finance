@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.jcdev.finance.Home">
+
+    //Linear Geral
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearGeral">
+
+        //Linear nome da aplicação
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/linearnomeApp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="@string/nome_app"
+                android:gravity="center_horizontal|center_vertical"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:id="@+id/nomePrincipalHome" />
+
+        </LinearLayout>
+
+        //Linear dos Creditos
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/linearnomeApp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linearCredito"
+            android:onClick="Credito">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/credito_home"
+                    android:id="@+id/textCredito"
+                    android:layout_above="@+id/imageAdd"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/imageAdd"
+                    android:layout_alignEnd="@+id/imageAdd"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical|center_horizontal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageAdd"
+                    android:src="@drawable/add"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/moeda"
+                    android:id="@+id/textmoedaC"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageAdd"
+                    android:layout_toEndOf="@+id/imageAdd"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/valorHome"
+                    android:id="@+id/valorCreditoHome"
+                    android:textSize="40sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        //Linear dos Debitos
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_below="@+id/linearCredito"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linearDebito"
+            android:onClick="Debito">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/debito_home"
+                    android:id="@+id/textDebito"
+                    android:layout_above="@+id/imageDel"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/imageDel"
+                    android:layout_alignEnd="@+id/imageDel"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical|center_horizontal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageDel"
+                    android:src="@drawable/del"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/moeda"
+                    android:id="@+id/textmoedaD"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageDel"
+                    android:layout_toEndOf="@+id/imageDel"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/valorHome"
+                    android:id="@+id/valorDebitoHome"
+                    android:textSize="40sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        //Linear do Saldo
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/linearDebito"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linearSaldo">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/saldo_home"
+                    android:id="@+id/textSaldo"
+                    android:layout_above="@+id/imageIgual"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignRight="@+id/imageIgual"
+                    android:layout_alignEnd="@+id/imageIgual"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical|center_horizontal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageIgual"
+                    android:src="@drawable/igual"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/moeda"
+                    android:id="@+id/textmoedaS"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageIgual"
+                    android:layout_toEndOf="@+id/imageIgual"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="@string/resultadoHome"
+                    android:id="@+id/valorSaldoHome"
+                    android:textSize="40sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        //Linear da Propaganda
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/linearSaldo"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/linearPropaganda">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relativeBannerHome">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

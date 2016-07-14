@@ -19,6 +19,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Home" />
+        <activity
+            android:name=".Credito.Credito"
+            android:label="@string/title_activity_credito"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Debito.Debito"
+            android:label="@string/title_activity_debito"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Authentication.Register"/>
     </application>
 
 </manifest>
