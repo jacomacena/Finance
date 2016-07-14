@@ -24,4 +24,15 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:24.0.0'
     compile 'com.android.support:support-v4:24.0.0'
+    compile 'com.android.support:design:24.0.0'
+
+    //dependencia para propraganda
+    compile 'com.google.android.gms:play-services-ads:9.2.1'
+
+    //dependencia para login
+    //compile 'com.facebook.android:facebook-android-sdk:4.11.0'
+    //compile 'com.facebook.android:audience-network-sdk:4.11.0'
+    compile 'com.google.android.gms:play-services-auth:9.2.1'
+    compile 'com.google.android.gms:play-services:9.2.1'
+    //compile 'com.android.volley:volley:1.0.0'
 }
